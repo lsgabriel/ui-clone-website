@@ -21,6 +21,59 @@
     width: 343px;background-color: #3B3B3C;border: none;color: white;
 }
 
+
+
+.wrapper-navbar{
+    background-color: #121212;width: 100%;
+    display: flex;justify-content: center;align-items: center;
+}
+
+nav{width:1024px;background-color: #121212;}
+
+
+header{
+    background-color: #121212;width: 100vw;height: 80vh;
+    background-image: url('assets/iphonebg.png');
+    background-size: cover;
+    display: flex;align-items: center;flex-direction: column;
+}
+
+header > h1{color: white;padding-top: 3.5rem;font-weight: 600;font-size: 3.2rem;}
+header > p{color: white;font-size: 1.50rem;}
+
+header > .buttons-wrapper{display: flex;flex-direction: row;gap: 2.4rem;}
+
+.buttons-wrapper > button{
+    font-size: 1.2rem;color: #2997FF;background-color: #000000;border: none;
+}
+.buttons-wrapper > button:hover{
+    opacity: 0.5;
+}
+
+.wrapper-footer{
+    background-color: #F5F5F7;width: 100%;
+    display: flex;justify-content: center;align-items: center;
+}
+
+footer{
+    width: 1024px;
+}
+
+.primary{font-weight: 600;font-size: 1rem;color: #1D1D1F;}
+.secondary{font-size: 0.9rem;color: #424245;line-height: 0.6;}
+.span{font-size: 0.9rem;color: #6E6E73;}
+
+.links{
+    height: 75vh;flex-wrap: wrap;
+    display: flex;padding-top: 20px;align-items: flex-start;
+    align-self: stretch;flex-direction: column;
+}
+
+.links-secondary{
+    display: flex;flex-direction: row;
+}
+
+
 /* Tablets */
 @media only screen and (max-width: 830px){
     .language-bar{width:90vw;height:auto;flex-direction: column;}
@@ -38,31 +91,7 @@
     .language-bar > .wrapper-buttons > .form-select{width: 50vw;}
 
     header{text-align: center;}
-}
 
-.wrapper-navbar{
-    background-color: #121212;width: 100%;
-    display: flex;justify-content: center;align-items: center;
-}
-
-nav{width:1024px;background-color: #121212;}
-
-
-header{
-    background-color: #121212;width: 100vw;height: 80vh;
-    background-image: url('assets/iphonebg.png');background-size: cover;
-    display: flex;align-items: center;
-    flex-direction: column;
-}
-
-header > h1{color: white;padding-top: 3.5rem;font-weight: 600;font-size: 3.2rem;}
-header > p{color: white;font-size: 1.50rem;}
-
-header > .buttons-wrapper{display: flex;flex-direction: row;gap: 2.4rem;}
-
-.buttons-wrapper > button{
-    font-size: 1.2rem;color: #2997FF;background-color: #000000;border: none;
-}
-.buttons-wrapper > button:hover{
-    opacity: 0.5;
+    footer{width: 90vw;}
+    .links{width: 90vw;height: auto;}
 }
